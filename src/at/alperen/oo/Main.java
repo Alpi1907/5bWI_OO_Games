@@ -20,7 +20,7 @@ public class Main {
         c1.addTires(T3);
         c1.addTires(T4);
 
-        System.out.println(c1.getMirrors().get(0).getPosition());
+        //System.out.println(c1.getMirrors().get(0).getPosition());
 
         /*car c1 = new car();
         c1.setBrand("Audi");
@@ -46,8 +46,19 @@ public class Main {
         c1.brake();
         c1.turboBoost();*/
         //System.out.println(c1.getEngine().getHorsePower());
-        c1.honk();
+        //c1.honk();
 
+
+        Truck t1 = new Truck(e1, "Mercedes", "green", "trailer1");
+
+        /*System.out.println(t1.getColor() + t1.getTrailer());
+        t1.drive();
+        t1.brake();*/
+
+        System.out.println(c1.getFuelAmount());
+        c1.turboBoost();
+        c1.drive();
+        t1.drive();
 
 
 

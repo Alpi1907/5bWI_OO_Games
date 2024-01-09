@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class car {
-    private Engine engine;
+    public Engine engine;
     private List<RearMirror> mirrors;
     private List<Tires> Tires;
     private int fuelConsumption;
@@ -22,6 +22,10 @@ public class car {
        // this.honkCounter = 0;
        this.mirrors = new ArrayList<>();
        this.Tires = new ArrayList<>();
+    }
+
+    public car(Engine engine, String brand, String color) {
+
     }
 
     public void addMirror(RearMirror rearMirror){
@@ -65,6 +69,7 @@ public class car {
         System.out.println("Ich bin ein " + this.brand + " und habe die Farbe " + this.color + " und hab " + this.getEngine().getHorsePower() + " PS. Ich habe" + this.Tires + ".");
     //    this.honkCounter++;
      }
+
 
 
 
